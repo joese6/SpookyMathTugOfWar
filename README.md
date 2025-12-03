@@ -22,7 +22,7 @@
 - 🎃 Fully spooky-themed UI/UX  
 - 🧮 Random multi-operation math challenges  
 - 👤 Player vs. AI (manual mode retained)  
-- 🧟 Halloween sound effects (bats, thunder, wolves, eerie bells)  
+- 🧟 Halloween sound effects (bats, thunder, wolf, bell, etc)  
 - 🧛 Animated characters reacting to correct/incorrect answers  
 - ⚡ Dynamic tug-of-war progress bar  
 - 🔧 Built with **HTML**, **CSS**, **JavaScript**, and enhanced using **Kiro** (hooks, steering, specs)
