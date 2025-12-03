@@ -1,2 +1,5 @@
 # Screenshot
-![Game Homepage](homepage.png)
+![Homepage](homepage.png)
+![Gamepage](gamepage.png)
+
+# Live Demo
