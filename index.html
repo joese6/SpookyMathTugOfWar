@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Spooky Math Tug of War</title>
+  <link rel="icon" type="images/png" href="assets/images/favicon.png">
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+  <audio id="bgMusicBat" src="assets/audio/bat.mp3" loop></audio>
+  <audio id="bgMusicBell" src="assets/audio/bell.mp3" loop></audio>
+  <audio id="bgMusicWolf" src="assets/audio/wolf.mp3"></audio>
+  <audio id="bgMusicThunder" src="assets/audio/thunder.mp3"></audio>
+  <div class="fog-overlay"></div>
+  <div class="rain-container" id="rainContainer"></div>
+  <div class="lightning-flash" id="lightningFlash"></div>
+  <div class="haunted-elements">
+    <div class="ghost ghost-1">👻</div>
+    <div class="ghost ghost-2">👻</div>
+    <div class="bat bat-1">🦇</div>
+    <div class="bat bat-2">🦇</div>
+    <div class="bat bat-3">🦇</div>
+  </div>
+  <div class="container">
+
+    <div id="homePage">
+      <div class="container">
+        <img src="assets/images/char.png" width="500" alt="">
+        <div class="title">👻 SPOOKY MATH TUG OF WAR 🎃</div>
+
+        <!-- AI Difficulty Selector -->
+        <div class="ai-selector">
+          <div class="ai-title">🤖 Choose Your Spectral Opponent</div>
+          <div class="ai-buttons">
+            <button class="ai-btn" data-difficulty="easy" onclick="setAIDifficulty('easy')">
+              <span class="ai-emoji">👶</span>
+              <span class="ai-name">Friendly Ghost</span>
+              <span class="ai-desc">40% Accuracy</span>
+            </button>
+            <button class="ai-btn active" data-difficulty="normal" onclick="setAIDifficulty('normal')">
+              <span class="ai-emoji">👻</span>
+              <span class="ai-name">Restless Spirit</span>
+              <span class="ai-desc">70% Accuracy</span>
+            </button>
+            <button class="ai-btn" data-difficulty="hard" onclick="setAIDifficulty('hard')">
+              <span class="ai-emoji">💀</span>
+              <span class="ai-name">Demon Scholar</span>
+              <span class="ai-desc">95% Accuracy</span>
+            </button>
+          </div>
+        </div>
+
+        <button class="menuBtn" onclick="playClick(); startGame('Ghostly Beginner',1,10)">👻 Ghostly Beginner</button>
+        <button class="menuBtn" onclick="playClick(); startGame('Pumpkin Apprentice',5,15)">🎃 Pumpkin
+          Apprentice</button>
+        <button class="menuBtn" onclick="playClick(); startGame('Witch Master',10,20)">🧙‍♀️ Witch Master</button>
+        <button class="menuBtn" onclick="playClick(); startGame('Demon Lord',15,25)">😈 Demon Lord</button>
+        <button class="menuBtn" onclick="playClick(); startGame('Nightmare Blitz',1,25)">💀 Nightmare Blitz</button>
+      </div>
+    </div>
+
+    <div id="gamePage">
+      <button class="btnHome" onclick="playClick(); backToHome()">← Back</button>
+      <button class="btnRestart" onclick="playClick(); restartGame()">↻ Restart</button>
+      <div class="title" id="gameTitle"></div>
+
+      <div class="board-area">
+        <div class="center-line"></div>
+        <div class="rope-wrap">
+          <div id="rope" class="rope"></div>
+        </div>
+      </div>
+
+      <div class="center-status">
+        <div id="gameMsg" class="gameMsg">🌙 The Haunted Battle Begins! 🌙</div>
+        <div class="dotsRow">
+          <div class="dotsGroup" id="leftDots"></div>
+          <div style="width:36px;height:2px;background:transparent"></div>
+          <div class="dotsGroup" id="rightDots"></div>
+        </div>
+      </div>
+
+      <div class="panels">
+        <div class="panel">
+          <div class="timer" id="timerLeft">⏳</div>
+          <div class="q-box" id="qLeft">—</div>
+          <div class="display-answer"><input id="inputLeft" class="answer-input" placeholder="left answer..."
+              inputmode="numeric" /></div>
+          <div class="keypad" id="padLeft"></div>
+        </div>
+
+        <div class="panel">
+          <div class="timer" id="timerRight">⏳</div>
+          <div class="q-box-1" id="qRight">—</div>
+          <div class="display-answer">
+            <span class="ai-input-indicator">🤖</span>
+            <input id="inputRight" class="answer-input" placeholder="AI thinking..." inputmode="numeric"
+              style="text-align:right" readonly />
+          </div>
+          <div class="keypad" id="padRight"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/js/script.js"></script>
+
+</body>
+
+</html>
