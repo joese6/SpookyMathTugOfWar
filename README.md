@@ -1,4 +1,4 @@
-# 🎃 Spooky Math Tug of War  
+# 🎃 Spooky Math Tug of War 👻
 **Spooky Math Tug of War** is a Halloween-themed educational math game where players compete against an AI opponent by solving arithmetic problems. Each correct answer pulls the character toward your side of the battlefield — increasing tension with spooky animations, sound effects, and a fully immersive Halloween vibe.
 
 ---
