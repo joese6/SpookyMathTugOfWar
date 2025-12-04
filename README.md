@@ -27,7 +27,7 @@
 - ⚡ Dynamic tug-of-war progress bar  
 - 🔧 Built with **HTML**, **CSS**, **JavaScript**, and enhanced using **Kiro** (hooks, steering, specs)
 
-##🧩 How It Works
+## 🧩 How It Works
 - The player solves math problems as fast as possible in 10 seconds.
 - Correct answers pull the rope toward the player’s side.
 - Wrong answers give the AI an advantage.
@@ -51,7 +51,7 @@ See the full license in the LICENSE file.
 - AI Assistant: Kiro , ChatGPT (OpenAI)
 - Halloween assets are AI-generated or free for public remix under open licenses.
 
-  ## 🎃 About the Remix
+## 🎃 About the Remix
 This project was originally a simple math tug-of-war game.
 Through the Kiroween Hackathon, it was transformed into a fully thematic spooky game by:
 - Adding Kiro scenes, moods, hooks, and logic behaviors
